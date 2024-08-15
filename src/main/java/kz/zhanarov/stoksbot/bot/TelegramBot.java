@@ -21,6 +21,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         return botConfig.getBotName();
     }
 
+    // основной метод
     @Override
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() &&  update.getMessage().hasText()){
